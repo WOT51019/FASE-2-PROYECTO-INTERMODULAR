@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="pulsar tec.png" alt="logo"></div>
+        <div class="botones">
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="deteccion.html"><button>Detección</button></a>
+            <a href="prevencion.html"><button>Prevención</button></a>
+            <a href="legal.html"><button>Legal</button></a>
+            <a href="casos.html"><button>Casos</button></a>
+            <a href="contacto.html"><button>Contacto</button></a>
+        </div>
+        <hr>
+    </header>
+
+     <!-- Hero Section -->
+     <section class="hero-casos">
+        <h1>Casos Reales de Deepfakes</h1>
+        <p>Ejemplos documentados donde nuestra tecnología protegió identidades y patrimonio.</p>
+    </section>
+
+    <!-- Filtros por Categoría -->
+    <section class="filtros">
+        <h2 class="sr-only">Filtrar casos</h2>
+        <div class="filtros-container">
+            <button class="filtro-btn active" data-categoria="todos">Todos</button>
+            <button class="filtro-btn" data-categoria="fraude">Fraude Económico</button>
+            <button class="filtro-btn" data-categoria="politica">Política</button>
+            <button class="filtro-btn" data-categoria="celebridades">Celebridades</button>
+        </div>
+    </section>
+
+    <!-- Grid de Casos -->
+    <section class="grid-casos">
+        <!-- Caso 1 -->
+        <article class="caso-card" data-categoria="fraude">
+            <div class="caso-img-container">
+                <img src="imagenes/caso-fraude-ceo.jpg" alt="Caso de fraude a CEO">
+                <span class="categoria-tag">Fraude</span>
+            </div>
+            <div class="caso-content">
+                <h3>Suplantación de CEO en Fortune 500</h3>
+                <p><strong>Método:</strong> Video deepfake en reunión Zoom solicitando transferencia urgente.</p>
+                <p><strong>Detectado por:</strong> Anomalías en el reflejo de gafas y tasa de parpadeo.</p>
+                <button class="ver-detalle-btn" data-caso="1">Ver análisis técnico</button>
+            </div>
+        </article>
+
+        <!-- Caso 2 -->
+        <article class="caso-card" data-categoria="politica">
+            <div class="caso-img-container">
+                <img src="imagenes/caso-politico.jpg" alt="Caso político">
+                <span class="categoria-tag">Política</span>
+            </div>
+            <div class="caso-content">
+                <h3>Discurso manipulado de candidato electoral</h3>
+                <p><strong>Método:</strong> Audio deepfake distribuido en redes sociales.</p>
+                <p><strong>Detectado por:</strong> Patrones de respiración inconsistentes.</p>
+                <button class="ver-detalle-btn" data-caso="2">Ver informe legal</button>
+            </div>
+        </article>
+
+        <!-- Caso 3 -->
+        <article class="caso-card" data-categoria="celebridades">
+            <div class="caso-img-container">
+                <img src="imagenes/caso-celebridad.jpg" alt="Caso de celebridad">
+                <span class="categoria-tag">Celebridad</span>
+            </div>
+            <div class="caso-content">
+                <h3>Filtración falsa de actriz internacional</h3>
+                <p><strong>Método:</strong> Imágenes generadas por IA en foros.</p>
+                <p><strong>Detectado por:</strong> Asimetrías en texturas de piel.</p>
+                <button class="ver-detalle-btn" data-caso="3">Ver detalles</button>
+            </div>
+        </article>
+    </section>
+
+    <!-- Modal para detalles (oculto inicialmente) -->
+    <div id="modal-caso" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <div id="modal-contenido"></div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="cta-casos">
+        <h2>¿Necesitas proteger tu organización?</h2>
+        <p>Analizamos vulnerabilidades específicas para tu sector.</p>
+        <a href="contacto.html" class="cta-btn">Solicitar auditoría</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Protección contra Deepfakes - Todos los derechos reservados</p>
+    </footer>
+</body>
